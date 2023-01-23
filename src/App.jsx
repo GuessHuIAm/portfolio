@@ -6,11 +6,14 @@ import Experience from './components/experience/Experience'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Favicon from 'react-favicon'
+import Icon from './assets/favicon.ico'
 import './index.css'
 
 const App = () => {
   return (
     <>
+      <Favicon url={Icon} />
       <Header />
       <NavBar />
       <About />

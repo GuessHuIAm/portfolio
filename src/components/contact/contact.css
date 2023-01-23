@@ -15,6 +15,7 @@
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 1.2rem;
+    word-wrap: break-word;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -51,6 +52,11 @@ input, textarea {
     border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white)
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-white);
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
