@@ -3,29 +3,15 @@ import {AiOutlineHome, AiOutlineUser, AiOutlineFolder, AiOutlineLaptop, AiOutlin
 
 import './navbar.css'
 
-const navLinks = [
-  { href: "#", icon: <AiOutlineHome /> },
-  { href: "#about", icon: <AiOutlineUser /> },
-  { href: "#experience", icon: <AiOutlineLaptop /> },
-  { href: "#portfolio", icon: <AiOutlineFolder /> },
-  { href: "#contact", icon: <AiOutlineMessage /> }
-]
-
-function NavLink({ href, icon }) {
+function NavBar() {
   const [activeNav, setActiveNav] = useState('#')
   return (
-    <a href={href} onClick={() => setActiveNav(href)} className={activeNav === href ? 'active' : ''}>
-      {icon}
-    </a>
-  )
-}
-
-function NavBar() {
-  return (
     <nav>
-      {navLinks.map(({ href, icon }) => (
-        <NavLink href={href} icon={icon} />
-      ))}
+      <a href="/#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#about" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}><AiOutlineUser /></a>
+      <a href="#experience" onClick={() => setActiveNav('experience')} className={activeNav === 'experience' ? 'active' : ''}><AiOutlineLaptop /></a>
+      <a href="#portfolio" onClick={() => setActiveNav('portfolio')} className={activeNav === 'portfolio' ? 'active' : ''}><AiOutlineFolder /></a>
+      <a href="#contact" onClick={() => setActiveNav('contact')} className={activeNav === 'contact' ? 'active' : ''}><AiOutlineMessage /></a>
     </nav>
   )
 }
