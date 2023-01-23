@@ -4,9 +4,15 @@
     gap: 2rem;
 }
 
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
 .experience__container > div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 2rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -24,10 +30,18 @@
     color: var(--color-primary);
 }
 
+.experience__container > div h4 {
+    font-size: 0.9rem;
+}
+
+.experience__container > div small {
+    font-size: 0.7rem;
+}
+
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2rem;
+    row-gap: 1.5rem;
 }
 
 .experience__details {
@@ -36,7 +50,7 @@
 }
 
 .experience__details-icon {
-    margin-top: 6px;
+    margin-top: 10px;
     color: var(--color-primary);
 }
 

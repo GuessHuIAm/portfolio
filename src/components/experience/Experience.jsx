@@ -26,8 +26,8 @@ const ExperienceDetail = ({title, subtitle, icon}) => {
 const languages = [
   { title: 'Python', subtitle: 'Experienced', icon: <SiPython />},
   { title: 'HTML', subtitle: 'Experienced', icon: <SiHtml5 />},
-  { title: 'CSS', subtitle: 'Experienced', icon: <SiCss3 />},
   { title: 'JavaScript', subtitle: 'Experienced', icon: <SiJavascript />},
+  { title: 'CSS', subtitle: 'Experienced', icon: <SiCss3 />},
   { title: 'C', subtitle: 'Experienced', icon: <SiC />},
   { title: 'C++', subtitle: 'Intermediate', icon: <SiCplusplus />},
   { title: 'C#', subtitle: 'Intermediate', icon: <SiCsharp />},
@@ -40,7 +40,7 @@ const tools = [
   { title: 'Git', subtitle: 'Experienced', icon: <SiGit />},
   { title: 'Unity', subtitle: 'Experienced', icon: <SiUnity />},
   { title: 'Postman', subtitle: 'Experienced', icon: <SiPostman />},
-  { title: 'Amazon AWS', subtitle: 'Experienced', icon: <SiAmazonaws />},
+  { title: 'AWS', subtitle: 'Experienced', icon: <SiAmazonaws />},
   { title: 'Docker', subtitle: 'Intermediate', icon: <SiDocker />},
   { title: 'Kubernetes', subtitle: 'Intermediate', icon: <SiKubernetes />},
   { title: 'Celery', subtitle: 'Intermediate', icon: <SiCelery />},
