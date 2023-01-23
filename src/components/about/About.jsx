@@ -1,6 +1,6 @@
 import React from 'react'
-import ME from '../../assets/logo.png'
-import {FaAward} from 'react-icons/fa'
+import ME from '../../assets/headshot.jpg'
+import {MdOutlineApartment, MdWork, MdBrush} from 'react-icons/md'
 
 import './about.css'
 
@@ -15,9 +15,9 @@ const Card = ({title, subtitle, icon}) => {
 }
 
 const cards = [
-  {title: 'Based In', subtitle: 'Brooklyn, NY and Cambridge, MA.', icon: <FaAward />},
-  {title: 'Experience', subtitle: 'Student, teaching fellow, game developer, and backend intern.', icon: <FaAward />},
-  {title: 'Hobbies', subtitle: 'Drawing, running, and cooking.', icon: <FaAward />}
+  {title: 'Based In', subtitle: 'Brooklyn, NY and Cambridge, MA.', icon: <MdOutlineApartment />},
+  {title: 'Experience', subtitle: 'Student, teaching fellow, game developer, and backend intern.', icon: <MdWork />},
+  {title: 'Hobbies', subtitle: 'Drawing, running, and cooking.', icon: <MdBrush />}
 ]
 
 const About = () => {
@@ -40,7 +40,13 @@ const About = () => {
           </div>
 
           <p>
-            Lorem, ipsum dolor sit ametconsectetur adipisicing elit. Eaque, doloribus.
+          Welcome to my portfolio! My name is Michael and I'm currently a student at Harvard University
+          studying Computer Science, Economics, and Visual Arts. I'm passionate about using technology to
+          connect people and bring them together. I believe that my unique combination of technical skills
+          and creative thinking allows me to approach problems from different angles and come up with
+          innovative solutions. When I'm not coding, you can find me exploring the world of visual arts, where I
+          love to let my creativity flow. I'm excited to share my projects and skills with you, and I
+          look forward to connecting with you!
           </p>
 
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>

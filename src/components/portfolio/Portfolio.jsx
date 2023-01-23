@@ -24,21 +24,21 @@ const PortfolioItem = ({title, img, githubLink, liveDemoLink, alt}) => {
 
 const portfolioItems = [
   {
-    title: 'This is a portfolio item title.',
+    title: 'Under Construction',
     img: IMG1,
     githubLink: 'https://github.com',
     liveDemoLink: 'https://github.com',
     alt: 'Description'
   },
   {
-    title: 'This is a portfolio item title.',
+    title: 'Under Construction',
     img: IMG2,
     githubLink: 'https://github.com',
     liveDemoLink: 'https://github.com',
     alt: 'Description'
   },
   {
-    title: 'This is a portfolio item title.',
+    title: 'Under Construction',
     img: IMG3,
     githubLink: 'https://github.com',
     liveDemoLink: 'https://github.com',

@@ -6,13 +6,13 @@ import emailjs from 'emailjs-com';
 
 import './contact.css'
 
-const ContactOption = ({icon: Icon, title, subtitle, link}) => {
+const ContactOption = ({icon: Icon, title, subtitle, link, message}) => {
   return (
     <article className='contact__option'>
       <Icon className='contact__option-icon'/>
       <h4>{title}</h4>
       <h5>{subtitle}</h5>
-      <a href={link} target='_blank' rel='noreferrer'>Send a message!</a>
+      <a href={link} target='_blank' rel='noreferrer'>{message}</a>
     </article>
   )
 }
@@ -22,19 +22,22 @@ const contactOptions = [
     icon: MdOutlineEmail,
     title: 'Email',
     subtitle: 'michaelhu@college.harvard.edu',
-    link: 'mailto:michaelhu@college.harvard.edu'
+    link: 'mailto:michaelhu@college.harvard.edu',
+    message: 'Send me an email!'
   },
   {
     icon: RiMessengerLine,
     title: 'Messenger',
-    subtitle: '--',
-    link: 'https://m.me/'
+    subtitle: '',
+    link: 'https://m.me/AHHHHHHHGH',
+    message: "Let's chat!"
   },
   {
     icon: BsWhatsapp,
     title: 'WhatsApp',
-    subtitle: '+123456789',
-    link: 'https://api.whatsapp.com/send?phone+16468817197'
+    subtitle: '',
+    link: 'https://api.whatsapp.com/send?phone=16468817197',
+    message: "Send me a message!"
   },
 ]
 

@@ -21,7 +21,7 @@ function Footer() {
         <a href="https://instagram.com"><FiInstagram /></a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; GuessHuIAm. All rights reserved.</small>
+        <small>&copy; Michael Hu. All rights reserved.</small>
       </div>
     </footer>
   )

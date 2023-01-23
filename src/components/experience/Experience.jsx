@@ -1,6 +1,10 @@
 import React from 'react'
 import {SiHtml5, SiCss3, SiJavascript, SiPython,
-  SiNodedotjs, SiC, SiCplusplus, SiCsharp, SiOcaml} from 'react-icons/si'
+  SiNodedotjs, SiC, SiCplusplus, SiCsharp, SiOcaml,
+  SiReact, SiGit, SiDocker, SiKubernetes, SiUnity,
+  SiPostman, SiAmazonaws, SiBootstrap, SiDjango,
+  SiFlask, SiCelery, SiMacos, SiUbuntu, SiWindows,
+  SiLinux, SiOpengl, SiJava, SiJenkins} from 'react-icons/si'
 import {GrMysql} from 'react-icons/gr'
 
 import './experience.css'
@@ -19,20 +23,44 @@ const ExperienceDetail = ({title, subtitle, icon}) => {
   )
 }
 
-const frontendSkills = [
+const languages = [
+  { title: 'Python', subtitle: 'Experienced', icon: <SiPython />},
   { title: 'HTML', subtitle: 'Experienced', icon: <SiHtml5 />},
   { title: 'CSS', subtitle: 'Experienced', icon: <SiCss3 />},
   { title: 'JavaScript', subtitle: 'Experienced', icon: <SiJavascript />},
-]
-
-const backendSkills = [
-  { title: 'Python', subtitle: 'Experienced', icon: <SiPython />},
   { title: 'C', subtitle: 'Experienced', icon: <SiC />},
-  { title: 'C++', subtitle: 'Experienced', icon: <SiCplusplus />},
+  { title: 'C++', subtitle: 'Intermediate', icon: <SiCplusplus />},
   { title: 'C#', subtitle: 'Intermediate', icon: <SiCsharp />},
-  { title: 'Node.js', subtitle: 'Intermediate', icon: <SiNodedotjs />},
+  { title: 'Java', subtitle: 'Intermediate', icon: <SiJava />},
   { title: 'MySQL', subtitle: 'Intermediate', icon: <GrMysql />},
   { title: 'OCaml', subtitle: 'Intermediate', icon: <SiOcaml />},
+]
+
+const tools = [
+  { title: 'Git', subtitle: 'Experienced', icon: <SiGit />},
+  { title: 'Unity', subtitle: 'Experienced', icon: <SiUnity />},
+  { title: 'Postman', subtitle: 'Experienced', icon: <SiPostman />},
+  { title: 'Amazon AWS', subtitle: 'Experienced', icon: <SiAmazonaws />},
+  { title: 'Docker', subtitle: 'Intermediate', icon: <SiDocker />},
+  { title: 'Kubernetes', subtitle: 'Intermediate', icon: <SiKubernetes />},
+  { title: 'Celery', subtitle: 'Intermediate', icon: <SiCelery />},
+  { title: 'OpenGL', subtitle: 'Intermediate', icon: <SiOpengl />},
+  { title: 'Jenkins', subtitle: 'Intermediate', icon: <SiJenkins />},
+]
+
+const frameworks = [
+  { title: 'Flask', subtitle: 'Experienced', icon: <SiFlask />},
+  { title: 'React', subtitle: 'Intermediate', icon: <SiReact />},
+  { title: 'Node.js', subtitle: 'Intermediate', icon: <SiNodedotjs />},
+  { title: 'Bootstrap', subtitle: 'Intermediate', icon: <SiBootstrap />},
+  { title: 'Django', subtitle: 'Intermediate', icon: <SiDjango />},
+]
+
+const operatingSystems = [
+  { title: 'macOS', subtitle: 'Experienced', icon: <SiMacos />},
+  { title: 'Windows 10', subtitle: 'Experienced', icon: <SiWindows />},
+  { title: 'Linux', subtitle: 'Experienced', icon: <SiLinux />},
+  { title: 'Ubuntu', subtitle: 'Intermediate', icon: <SiUbuntu />},
 ]
     
 function Experience() {
@@ -40,23 +68,39 @@ function Experience() {
     <section id='experience'>
     <h5>What Skills I Have</h5>
     <h2>My Experience</h2>
+
     <div className="container experience__container">
 
-      <div className="experience__frontend">
-        <h3>Frontend Development</h3>
+      <div className="experience__languages">
+        <h3>Languages</h3>
         <div className="experience__content">
-          {frontendSkills.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          {languages.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
         </div>
       </div>
 
-      <div className="experience__backend">
-        <h3>Backend Development</h3>
+      <div className="experience__tools">
+        <h3>Tools</h3>
         <div className="experience__content">
-          {backendSkills.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          {tools.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
+        </div>
+      </div>
+
+      <div className="experience__frameworks">
+        <h3>Frameworks</h3>
+        <div className="experience__content">
+          {frameworks.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
+        </div>
+      </div>
+
+      <div className="experience__frontend">
+        <h3>Operating Systems</h3>
+        <div className="experience__content">
+          {operatingSystems.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
         </div>
       </div>
 
     </div>
+
   </section>
   )
 }
