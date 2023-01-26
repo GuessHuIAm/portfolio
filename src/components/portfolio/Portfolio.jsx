@@ -1,48 +1,69 @@
 import React from 'react'
-import IMG1 from '../../assets/logo.png'
-import IMG2 from '../../assets/logo.png'
+import POOL_IMG from '../../assets/pool.gif'
+import TOWER_POWER_IMG from '../../assets/tower_power.png'
 import IMG3 from '../../assets/logo.png'
 
 import './portfolio.css'
 
-const PortfolioItem = ({title, img, githubLink, liveDemoLink, alt}) => {
+const PortfolioItem = ({title, img, alt, githubLink, subtitle, btn_name}) => {
   return (
     <article className='portfolio__item'>
-      <div className='portfolio__item-image'>
-        <img src={img} alt={alt} />
+        <div className="portfolio__item-image">
+          <img src={img} alt={alt}/>
+        </div>
         <h2>
           {title}
         </h2>
         <div className='portfolio__item-cta'>
-          <a href={githubLink} className='btn'>Github</a>
-          <a href={liveDemoLink} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+          <a href={githubLink} className='btn btn-primary'>{btn_name}</a>
         </div>
-      </div>
+        <small className='text-light'>
+          {subtitle}
+        </small>
     </article>
   )
 }
 
 const portfolioItems = [
   {
-    title: 'Under Construction',
-    img: IMG1,
-    githubLink: 'https://github.com',
-    liveDemoLink: 'https://github.com',
-    alt: 'Description'
+    title: 'Pool Game',
+    img: POOL_IMG,
+    githubLink: 'https://github.com/pforderique/6.4400-final-project',
+    subtitle: 'Created with Piero Orderique. A 2D pool game with physics simulations.',
+    alt: 'Description',
+    btn_name: 'Github',
   },
   {
-    title: 'Under Construction',
-    img: IMG2,
+    title: 'Shadow Mapper',
+    img: IMG3,
     githubLink: 'https://github.com',
-    liveDemoLink: 'https://github.com',
-    alt: 'Description'
+    subtitle: 'Hello!',
+    alt: 'Description',
+    btn_name: 'Github',
+  },
+  {
+    title: 'Ray Tracer',
+    img: IMG3,
+    githubLink: 'https://github.com',
+    subtitle: 'Hello!',
+    alt: 'Description',
+    btn_name: 'Github',
+  },
+  {
+    title: 'Tower Power',
+    img: TOWER_POWER_IMG,
+    githubLink: 'https://github.com/GuessHuIAm/tower-power',
+    subtitle: 'Created with Megan Yeo and Nithya Gottipati. A classic tower defense game!',
+    alt: 'Description',
+    btn_name: 'Github',
   },
   {
     title: 'Under Construction',
     img: IMG3,
     githubLink: 'https://github.com',
-    liveDemoLink: 'https://github.com',
-    alt: 'Description'
+    subtitle: 'Hello!',
+    alt: 'Description',
+    btn_name: 'Github',
   },
 ]
 

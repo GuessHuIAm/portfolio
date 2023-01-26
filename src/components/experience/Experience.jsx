@@ -4,7 +4,7 @@ import {SiHtml5, SiCss3, SiJavascript, SiPython,
   SiReact, SiGit, SiDocker, SiKubernetes, SiUnity,
   SiPostman, SiAmazonaws, SiBootstrap, SiDjango,
   SiFlask, SiCelery, SiMacos, SiUbuntu, SiWindows,
-  SiLinux, SiOpengl, SiJava, SiJenkins} from 'react-icons/si'
+  SiLinux, SiOpengl, SiJava, SiJenkins, SiR} from 'react-icons/si'
 import {GrMysql} from 'react-icons/gr'
 
 import './experience.css'
@@ -32,6 +32,7 @@ const languages = [
   { title: 'C++', subtitle: 'Intermediate', icon: <SiCplusplus />},
   { title: 'C#', subtitle: 'Intermediate', icon: <SiCsharp />},
   { title: 'Java', subtitle: 'Intermediate', icon: <SiJava />},
+  { title: 'R', subtitle: 'Intermediate', icon: <SiR />},
   { title: 'MySQL', subtitle: 'Intermediate', icon: <GrMysql />},
   { title: 'OCaml', subtitle: 'Intermediate', icon: <SiOcaml />},
 ]
@@ -39,12 +40,12 @@ const languages = [
 const tools = [
   { title: 'Git', subtitle: 'Experienced', icon: <SiGit />},
   { title: 'Unity', subtitle: 'Experienced', icon: <SiUnity />},
-  { title: 'Postman', subtitle: 'Experienced', icon: <SiPostman />},
-  { title: 'AWS', subtitle: 'Experienced', icon: <SiAmazonaws />},
+  { title: 'OpenGL', subtitle: 'Experienced', icon: <SiOpengl />},
+  { title: 'AWS', subtitle: 'Intermediate', icon: <SiAmazonaws />},
+  { title: 'Postman', subtitle: 'Intermediate', icon: <SiPostman />},
   { title: 'Docker', subtitle: 'Intermediate', icon: <SiDocker />},
   { title: 'Kubernetes', subtitle: 'Intermediate', icon: <SiKubernetes />},
   { title: 'Celery', subtitle: 'Intermediate', icon: <SiCelery />},
-  { title: 'OpenGL', subtitle: 'Intermediate', icon: <SiOpengl />},
   { title: 'Jenkins', subtitle: 'Intermediate', icon: <SiJenkins />},
 ]
 
