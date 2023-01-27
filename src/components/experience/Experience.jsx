@@ -1,69 +1,71 @@
 import React from 'react'
-import {SiHtml5, SiCss3, SiJavascript, SiPython,
-  SiNodedotjs, SiC, SiCplusplus, SiCsharp, SiOcaml,
-  SiReact, SiGit, SiDocker, SiKubernetes, SiUnity,
-  SiPostman, SiAmazonaws, SiBootstrap, SiDjango,
-  SiFlask, SiCelery, SiMacos, SiUbuntu, SiWindows,
-  SiLinux, SiOpengl, SiJava, SiJenkins, SiR} from 'react-icons/si'
-import {GrMysql} from 'react-icons/gr'
-
+import ExperienceDetail from './ExperienceDetail'
 import './experience.css'
 
-const ExperienceDetail = ({title, subtitle, icon}) => {
-  return (
-    <article className='experience__details'>
-      <div className='experience__details-icon'>
-        {icon}
-      </div>
-      <div>
-        <h4>{title}</h4>
-        <small className='text-light'>{subtitle}</small>
-      </div>
-    </article>
-  )
-}
-
-const languages = [
-  { title: 'Python', subtitle: 'Experienced', icon: <SiPython />},
-  { title: 'HTML', subtitle: 'Experienced', icon: <SiHtml5 />},
-  { title: 'JavaScript', subtitle: 'Experienced', icon: <SiJavascript />},
-  { title: 'CSS', subtitle: 'Experienced', icon: <SiCss3 />},
-  { title: 'C', subtitle: 'Experienced', icon: <SiC />},
-  { title: 'C++', subtitle: 'Intermediate', icon: <SiCplusplus />},
-  { title: 'C#', subtitle: 'Intermediate', icon: <SiCsharp />},
-  { title: 'Java', subtitle: 'Intermediate', icon: <SiJava />},
-  { title: 'R', subtitle: 'Intermediate', icon: <SiR />},
-  { title: 'MySQL', subtitle: 'Intermediate', icon: <GrMysql />},
-  { title: 'OCaml', subtitle: 'Intermediate', icon: <SiOcaml />},
+const experienceData = [
+  {
+    title: "Backend Engineering Intern",
+    positions: [
+      {time: "Summer 2022", location: "Wayscript", link: "https://www.wayscript.com/",
+       description: "Implemented file and folder download feature on a Flask application \
+       to streamline the setup of standardized development environments. Enhanced security \
+       by adding encryption to Redis caches. Improved runtime efficiency through automation \
+       of email notifications using Render's Celery workers and optimization of Docker container \
+       deployment on Kubernetes."},
+    ]
+  },
+  {
+    title: "Research Assistant",
+    positions: [
+      {time: "Spring 2023", location: "LIT Lab", link: "https://lit.gse.harvard.edu/",
+      description: "Improve the data collection platform, cleaning and standardizing the \
+      Pose and OpenFace data to allow for meaningful analysis, generating video data visualizations \
+      of the participants movement within the fabrication lab over a \
+      period of time, implementing basic clustering analysis methodologies \
+      and developing an algorithm to generate the lines of sight of \
+      each participant within the makerspace to analyze social interactions."},
+    ]
+  },
+  {
+    title: "Teaching Fellow",
+    positions: [
+      {time: "Winter 2023", location: "CS50 for JDs", link: "https://cs50.harvard.edu/hls/2023/winter/",
+       description: "Assisted with the instruction of 60+ students in three labs, provided critical feedback on student work, and held office hours on computer science materials including Python, web programming (HTML, CSS, JavaScript, SQL, Bootstrap), and computer networking. Led a seminar on AI art."},
+      {time: "Fall 2022", location: "CS50", link: "https://cs50.harvard.edu/college/2022/fall/",
+       description: "Assisted with the instruction of 15+ students in weekly labs, provided critical feedback on student work, and held office hours and tutorials on introductory to intermediate-level computer science materials including C, Python, web programming (HTML, CSS, JavaScript, SQL), and image processing."},
+    ]
+  },
+  {
+    title: "Developer",
+    positions: [
+      {time: "Fall 2022 - Spring 2023", location: "Harvard Game Devs", link: "",
+       description: "Develop a personal 2D top-down action-adventure game and contribute to \
+       the development of a group rogue RPG project using C++ and Unity. Create art assets \
+       using Tiled and Procreate. "},
+      {time: "Fall 2021 - Spring 2022", location: "Datamatch", link: "https://datamatch.me/",
+       description: "Employed OpenAI API and Firebase to revamp the algorithms used in Harvard's \
+       Datamatch web application (matchmaking service used by over 50,000 college students at over \
+        30 schools) for the February 2022 launch."},
+    ]
+  },
+  {
+    title: "Designer",
+    positions: [
+      {time: "Fall 2021 - Spring 2023", location: "The Harvard Crimson", link: "https://www.thecrimson.com/writer/1217465/Michael__Hu/",
+       description: "Illustrate and edit graphics for the magazine's weekly issues and \
+       coordinate pitches between the writers and designers. Layout and design the Crimson's \
+      monthly 20-page magazine."},
+    ]
+  },
+  {
+    title: "Associate",
+    positions: [
+      {time: "Spring 2022", location: "Harvard College Consulting Club", link: "https://www.harvardconsulting.org/",
+       description: "Work in a six-person case team to analyze performance management and talent retention strategies for a Fortune 500 manufacturing company."},
+    ]
+  },
 ]
 
-const tools = [
-  { title: 'Git', subtitle: 'Experienced', icon: <SiGit />},
-  { title: 'Unity', subtitle: 'Experienced', icon: <SiUnity />},
-  { title: 'OpenGL', subtitle: 'Experienced', icon: <SiOpengl />},
-  { title: 'AWS', subtitle: 'Intermediate', icon: <SiAmazonaws />},
-  { title: 'Postman', subtitle: 'Intermediate', icon: <SiPostman />},
-  { title: 'Docker', subtitle: 'Intermediate', icon: <SiDocker />},
-  { title: 'Kubernetes', subtitle: 'Intermediate', icon: <SiKubernetes />},
-  { title: 'Celery', subtitle: 'Intermediate', icon: <SiCelery />},
-  { title: 'Jenkins', subtitle: 'Intermediate', icon: <SiJenkins />},
-]
-
-const frameworks = [
-  { title: 'Flask', subtitle: 'Experienced', icon: <SiFlask />},
-  { title: 'React', subtitle: 'Intermediate', icon: <SiReact />},
-  { title: 'Node.js', subtitle: 'Intermediate', icon: <SiNodedotjs />},
-  { title: 'Bootstrap', subtitle: 'Intermediate', icon: <SiBootstrap />},
-  { title: 'Django', subtitle: 'Intermediate', icon: <SiDjango />},
-]
-
-const operatingSystems = [
-  { title: 'macOS', subtitle: 'Experienced', icon: <SiMacos />},
-  { title: 'Windows 10', subtitle: 'Experienced', icon: <SiWindows />},
-  { title: 'Linux', subtitle: 'Experienced', icon: <SiLinux />},
-  { title: 'Ubuntu', subtitle: 'Intermediate', icon: <SiUbuntu />},
-]
-    
 function Experience() {
     return (
     <section id='experience'>
@@ -71,36 +73,25 @@ function Experience() {
     <h2>My Experience</h2>
 
     <div className="container experience__container">
-
-      <div className="experience__languages">
-        <h3>Languages</h3>
-        <div className="experience__content">
-          {languages.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
-      <div className="experience__tools">
-        <h3>Tools</h3>
-        <div className="experience__content">
-          {tools.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
-      <div className="experience__frameworks">
-        <h3>Frameworks</h3>
-        <div className="experience__content">
-          {frameworks.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
-      <div className="experience__frontend">
-        <h3>Operating Systems</h3>
-        <div className="experience__content">
-          {operatingSystems.map(({title, subtitle, icon}) => <ExperienceDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
-    </div>
+     {experienceData.map(item => {
+      return (
+      <article className="experience__item">
+        <h2>{item.title}</h2>
+        {item.positions.map(position => {
+          return (
+            <ExperienceDetail
+            time={position.time}
+            location={position.location}
+            link={position.link}
+            description={position.description}/>
+          )
+        }
+        )
+        }
+        </article>)
+        })
+      }
+     </div>
 
   </section>
   )

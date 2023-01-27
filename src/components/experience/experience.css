@@ -1,57 +1,39 @@
 .experience__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem 3rem;
+    align-items: flex-start;
 }
 
-.experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.experience__container > div {
+.experience__item {
     background: var(--color-bg-variant);
     padding: 2rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+
 }
 
-.experience__container > div:hover {
+.experience__item:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
 
-.experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
+.experience__detail {
+    margin-top: 1.5rem;
 }
 
-.experience__container > div h4 {
-    font-size: 0.9rem;
-}
-
-.experience__container > div small {
-    font-size: 0.7rem;
-}
-
-.experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 1.5rem;
-}
-
-.experience__details {
+.experience__detail > div {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.experience__details-icon {
-    margin-top: 10px;
-    color: var(--color-primary);
+.experience__btn {
+    background: transparent;
+    color: var(--color-bg-variant);
+    font-size: 1.5rem;
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
