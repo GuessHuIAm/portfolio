@@ -1,7 +1,7 @@
 import React from 'react'
-import POOL_IMG from '../../assets/pool.gif'
-import TOWER_POWER_IMG from '../../assets/tower_power.png'
-import IMG3 from '../../assets/logo.png'
+import POOL_IMG from '../../assets/projects/pool.gif'
+import TOWER_POWER_IMG from '../../assets/projects/tower_power.png'
+import TEMP from '../../assets/logo.png'
 
 import './projects.css'
 
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: 'Shadow Mapper',
-    img: IMG3,
+    img: TEMP,
     githubLink: 'https://github.com',
     subtitle: 'Under Construction',
     alt: 'Description',
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     title: 'Ray Tracer',
-    img: IMG3,
+    img: TEMP,
     githubLink: 'https://github.com',
     subtitle: 'Under Construction',
     alt: 'Description',
@@ -59,7 +59,7 @@ const projects = [
   },
   {
     title: 'Bleetcode',
-    img: IMG3,
+    img: TEMP,
     githubLink: 'https://github.com',
     subtitle: 'Under Construction',
     alt: 'Description',

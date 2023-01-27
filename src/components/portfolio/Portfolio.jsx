@@ -11,13 +11,13 @@ import Kirby from '../../assets/videos/Kirby.mp4'
 import MoMA from '../../assets/videos/MoMA_Night.mp4'
 import Fruits from '../../assets/videos/Fruits.mov'
 
-import Diasphora from '../../assets/Diasporic_Essay.png'
-import DrinkingAlone from '../../assets/crimson/Drinking_Alone_Under_the_Moon_with_Li_Bai.png'
-import FromMeInCambridge from '../../assets/crimson/From_Me,_In_Cambridge,_With_Love.png'
-import LadderFaculty from '../../assets/crimson/Ladder_Faculty.png'
-import EmptyHarvardYard from '../../assets/crimson/Empty_Harvard_Yard.png'
-import Lamonster from '../../assets/crimson/Lamonster.png'
-import Situationship from '../../assets/crimson/Situationship.png'
+import Diasphora from '../../assets/drawings/Diasporic_Essay.png'
+import DrinkingAlone from '../../assets/drawings/Drinking_Alone_Under_the_Moon_with_Li_Bai.png'
+import FromMeInCambridge from '../../assets/drawings/From_Me,_In_Cambridge,_With_Love.png'
+import LadderFaculty from '../../assets/drawings/Ladder_Faculty.png'
+import EmptyHarvardYard from '../../assets/drawings/Empty_Harvard_Yard.png'
+import Lamonster from '../../assets/drawings/Lamonster.png'
+import Situationship from '../../assets/drawings/Situationship.png'
 
 import './portfolio.css'
 
@@ -56,7 +56,7 @@ const pictureItems = [
     alt: 'Link',
   },
   { 
-    title: 'Diasphora',
+    title: 'College Application',
     img: Diasphora,
     subtitle: '',
     alt: 'Link',
@@ -98,19 +98,49 @@ function Portfolio() {
     <section id='portfolio'>
       <h5>My Recent Artworks</h5>
       <h2>Portfolio</h2>
-      {/* Photo Portfolio */}
-      <Swiper
-        modules={[Pagination, Autoplay, EffectCards]}
-        slidesPerView={1}
-        effect={'cards'}
-        autoplay={{delay: 5000}}
+
+      <div className="swiper-container">
+        {/* Photo Portfolio */}
+        <Swiper
+          modules={[Pagination, Autoplay, EffectCards]}
+          slidesPerView={1}
+          effect={'cards'}
+          autoplay={{delay: 5000}}
+          pagination={{ clickable: true }}>
+          <article>
+            {pictureItems.map(item => {
+              return (
+                <SwiperSlide className='portfolio__item'>
+                  <div className="portfolio__item-image">
+                    <img src={item.img} alt={item.alt} />
+                  </div>
+                  <h2>
+                    {item.title}
+                  </h2>
+                  <small className='text-light'>
+                    {item.subtitle}
+                  </small>
+                </SwiperSlide>
+              )
+            })}
+          </article>
+        </Swiper>
+        <br/>
+
+        {/* Video Portfolio */}
+        <Swiper
+        modules={[Pagination]}
+        spaceBetween={20}
+        slidesPerView={2}
         pagination={{ clickable: true }}>
         <article>
-          {pictureItems.map(item => {
+          {videoItems.map(item => {
             return (
               <SwiperSlide className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={item.img} alt={item.alt} />
+                  <video src={item.img} alt={item.alt} controls>
+                    Your browser doesn't support the video tag.
+                  </video>
                 </div>
                 <h2>
                   {item.title}
@@ -123,34 +153,7 @@ function Portfolio() {
           })}
         </article>
       </Swiper>
-      <br/>
-
-      {/* Video Portfolio */}
-      <Swiper
-      modules={[Pagination]}
-      spaceBetween={20}
-      slidesPerView={2}
-      pagination={{ clickable: true }}>
-      <article>
-        {videoItems.map(item => {
-          return (
-            <SwiperSlide className='portfolio__item'>
-              <div className="portfolio__item-image">
-                <video src={item.img} alt={item.alt} controls>
-                  Your browser doesn't support the video tag.
-                </video>
-              </div>
-              <h2>
-                {item.title}
-              </h2>
-              <small className='text-light'>
-                {item.subtitle}
-              </small>
-            </SwiperSlide>
-          )
-        })}
-      </article>
-    </Swiper>
+      </div>
     </section>
   )
 }
