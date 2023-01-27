@@ -1,15 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.34effe62.chunk.css",
-    "main.js": "/portfolio/static/js/main.82a97ce8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.82a97ce8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.3a24157d.chunk.css",
+    "main.js": "/portfolio/static/js/main.f523ebc1.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f523ebc1.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.feeb1c2b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.feeb1c2b.js.map",
-    "static/js/2.001f6f2c.chunk.js": "/portfolio/static/js/2.001f6f2c.chunk.js",
-    "static/js/2.001f6f2c.chunk.js.map": "/portfolio/static/js/2.001f6f2c.chunk.js.map",
+    "static/css/2.e1b0056a.chunk.css": "/portfolio/static/css/2.e1b0056a.chunk.css",
+    "static/js/2.3809ffea.chunk.js": "/portfolio/static/js/2.3809ffea.chunk.js",
+    "static/js/2.3809ffea.chunk.js.map": "/portfolio/static/js/2.3809ffea.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.34effe62.chunk.css.map": "/portfolio/static/css/main.34effe62.chunk.css.map",
-    "static/js/2.001f6f2c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.001f6f2c.chunk.js.LICENSE.txt",
+    "static/css/2.e1b0056a.chunk.css.map": "/portfolio/static/css/2.e1b0056a.chunk.css.map",
+    "static/css/main.3a24157d.chunk.css.map": "/portfolio/static/css/main.3a24157d.chunk.css.map",
+    "static/js/2.3809ffea.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3809ffea.chunk.js.LICENSE.txt",
+    "static/media/Diasporic_Essay.d4d9ff31.png": "/portfolio/static/media/Diasporic_Essay.d4d9ff31.png",
+    "static/media/Drinking_Alone_Under_the_Moon_with_Li_Bai.69e54880.png": "/portfolio/static/media/Drinking_Alone_Under_the_Moon_with_Li_Bai.69e54880.png",
+    "static/media/Empty_Harvard_Yard.ac3b9593.png": "/portfolio/static/media/Empty_Harvard_Yard.ac3b9593.png",
+    "static/media/From_Me,_In_Cambridge,_With_Love.5b07ab61.png": "/portfolio/static/media/From_Me,_In_Cambridge,_With_Love.5b07ab61.png",
+    "static/media/Fruits.94c9765b.mov": "/portfolio/static/media/Fruits.94c9765b.mov",
+    "static/media/Great_Books.8aa535c3.mov": "/portfolio/static/media/Great_Books.8aa535c3.mov",
+    "static/media/Kirby.a0539fb2.mp4": "/portfolio/static/media/Kirby.a0539fb2.mp4",
+    "static/media/Ladder_Faculty.2145f415.png": "/portfolio/static/media/Ladder_Faculty.2145f415.png",
+    "static/media/Lamonster.a0a6489b.png": "/portfolio/static/media/Lamonster.a0a6489b.png",
+    "static/media/MoMA_Night.91695440.mp4": "/portfolio/static/media/MoMA_Night.91695440.mp4",
+    "static/media/Situationship.96d6be1a.png": "/portfolio/static/media/Situationship.96d6be1a.png",
     "static/media/favicon.fc9d1e40.ico": "/portfolio/static/media/favicon.fc9d1e40.ico",
     "static/media/headshot.22a32fb4.jpg": "/portfolio/static/media/headshot.22a32fb4.jpg",
     "static/media/pool.f16e7eac.gif": "/portfolio/static/media/pool.f16e7eac.gif",
@@ -18,8 +31,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.feeb1c2b.js",
-    "static/js/2.001f6f2c.chunk.js",
-    "static/css/main.34effe62.chunk.css",
-    "static/js/main.82a97ce8.chunk.js"
+    "static/css/2.e1b0056a.chunk.css",
+    "static/js/2.3809ffea.chunk.js",
+    "static/css/main.3a24157d.chunk.css",
+    "static/js/main.f523ebc1.chunk.js"
   ]
 }
