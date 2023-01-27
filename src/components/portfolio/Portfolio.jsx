@@ -6,74 +6,89 @@ import 'swiper/modules/pagination/pagination.min.css'
 import 'swiper/modules/autoplay/autoplay.min.css'
 import 'swiper/modules/effect-cards/effect-cards.min.css'
 
-import POOL_IMG from '../../assets/pool.gif'
-import IMG3 from '../../assets/logo.png'
+import GreatBooks from '../../assets/videos/Great_Books.mov'
+import Kirby from '../../assets/videos/Kirby.mp4'
+import MoMA from '../../assets/videos/MoMA_Night.mp4'
+import Fruits from '../../assets/videos/Fruits.mov'
+
+import Diasphora from '../../assets/Diasporic_Essay.png'
+import DrinkingAlone from '../../assets/crimson/Drinking_Alone_Under_the_Moon_with_Li_Bai.png'
+import FromMeInCambridge from '../../assets/crimson/From_Me,_In_Cambridge,_With_Love.png'
+import LadderFaculty from '../../assets/crimson/Ladder_Faculty.png'
+import EmptyHarvardYard from '../../assets/crimson/Empty_Harvard_Yard.png'
+import Lamonster from '../../assets/crimson/Lamonster.png'
+import Situationship from '../../assets/crimson/Situationship.png'
 
 import './portfolio.css'
 
-const portfolioItems = [
+const videoItems = [
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Great Books',
+    img: GreatBooks,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Kirby',
+    img: Kirby,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Night at the MoMA',
+    img: MoMA,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Fruits',
+    img: Fruits,
+    subtitle: '',
     alt: 'Link',
-  },
-  {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
-    alt: 'Description',
-    btn_name: 'Github',
-  },
+  }
 ]
 
-const crimsonItems = [
+const pictureItems = [
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Lamonster',
+    img: Lamonster,
+    subtitle: '',
+    alt: 'Link',
+  },
+  { 
+    title: 'Diasphora',
+    img: Diasphora,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Situationship',
+    img: Situationship,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Ladders',
+    img: LadderFaculty,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Empty Harvard Yard',
+    img: EmptyHarvardYard,
+    subtitle: '',
     alt: 'Link',
   },
   {
-    title: 'Shadow Mapper',
-    img: IMG3,
-    subtitle: 'Hello!',
+    title: 'Letters to Myself',
+    img: FromMeInCambridge,
+    subtitle: '',
+    alt: 'Link',
+  },
+  {
+    title: 'Drinking Alone Under the Moon with Li Bai',
+    img: DrinkingAlone,
+    subtitle: '',
     alt: 'Link',
   },
 ]
@@ -83,6 +98,7 @@ function Portfolio() {
     <section id='portfolio'>
       <h5>My Recent Artworks</h5>
       <h2>Portfolio</h2>
+      {/* Photo Portfolio */}
       <Swiper
         modules={[Pagination, Autoplay, EffectCards]}
         slidesPerView={1}
@@ -90,7 +106,7 @@ function Portfolio() {
         autoplay={{delay: 5000}}
         pagination={{ clickable: true }}>
         <article>
-          {portfolioItems.map(item => {
+          {pictureItems.map(item => {
             return (
               <SwiperSlide className='portfolio__item'>
                 <div className="portfolio__item-image">
@@ -108,30 +124,33 @@ function Portfolio() {
         </article>
       </Swiper>
       <br/>
+
+      {/* Video Portfolio */}
       <Swiper
-        modules={[Pagination, Autoplay, EffectCards]}
-        slidesPerView={1}
-        effect={'cards'}
-        autoplay={{delay: 5000}}
-        pagination={{ clickable: true }}>
-        <article>
-          {crimsonItems.map(item => {
-            return (
-              <SwiperSlide className='portfolio__item'>
-                <div className="portfolio__item-image">
-                  <img src={item.img} alt={item.alt} />
-                </div>
-                <h2>
-                  {item.title}
-                </h2>
-                <small className='text-light'>
-                  {item.subtitle}
-                </small>
-              </SwiperSlide>
-            )
-          })}
-        </article>
-      </Swiper>
+      modules={[Pagination]}
+      spaceBetween={20}
+      slidesPerView={2}
+      pagination={{ clickable: true }}>
+      <article>
+        {videoItems.map(item => {
+          return (
+            <SwiperSlide className='portfolio__item'>
+              <div className="portfolio__item-image">
+                <video src={item.img} alt={item.alt} controls>
+                  Your browser doesn't support the video tag.
+                </video>
+              </div>
+              <h2>
+                {item.title}
+              </h2>
+              <small className='text-light'>
+                {item.subtitle}
+              </small>
+            </SwiperSlide>
+          )
+        })}
+      </article>
+    </Swiper>
     </section>
   )
 }
