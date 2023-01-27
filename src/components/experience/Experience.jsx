@@ -67,7 +67,7 @@ const operatingSystems = [
 function Experience() {
     return (
     <section id='experience'>
-    <h5>What Skills I Have</h5>
+    <h5>What I've Been Up To</h5>
     <h2>My Experience</h2>
 
     <div className="container experience__container">

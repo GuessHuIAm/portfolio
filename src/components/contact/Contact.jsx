@@ -21,8 +21,8 @@ const contactOptions = [
   {
     icon: MdOutlineEmail,
     title: 'Email',
-    subtitle: 'michaelhu@college.harvard.edu',
-    link: 'mailto:michaelhu@college.harvard.edu',
+    subtitle: 'michaelhu.tech@gmail.com',
+    link: 'mailto:michaelhu.tech@gmail.com',
     message: 'Send me an email!'
   },
   {

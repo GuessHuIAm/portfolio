@@ -1,80 +1,137 @@
 import React from 'react'
+import { Pagination, Autoplay, EffectCards} from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
+import 'swiper/modules/autoplay/autoplay.min.css'
+import 'swiper/modules/effect-cards/effect-cards.min.css'
+
 import POOL_IMG from '../../assets/pool.gif'
-import TOWER_POWER_IMG from '../../assets/tower_power.png'
 import IMG3 from '../../assets/logo.png'
 
 import './portfolio.css'
 
-const PortfolioItem = ({title, img, alt, githubLink, subtitle, btn_name}) => {
-  return (
-    <article className='portfolio__item'>
-        <div className="portfolio__item-image">
-          <img src={img} alt={alt}/>
-        </div>
-        <h2>
-          {title}
-        </h2>
-        <div className='portfolio__item-cta'>
-          <a href={githubLink} className='btn btn-primary'>{btn_name}</a>
-        </div>
-        <small className='text-light'>
-          {subtitle}
-        </small>
-    </article>
-  )
-}
-
 const portfolioItems = [
   {
-    title: 'Pool Game',
-    img: POOL_IMG,
-    githubLink: 'https://github.com/pforderique/6.4400-final-project',
-    subtitle: 'Created with Piero Orderique. A 2D pool game with physics simulations.',
-    alt: 'Description',
-    btn_name: 'Github',
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
   },
   {
     title: 'Shadow Mapper',
     img: IMG3,
-    githubLink: 'https://github.com',
     subtitle: 'Hello!',
-    alt: 'Description',
-    btn_name: 'Github',
+    alt: 'Link',
   },
   {
-    title: 'Ray Tracer',
+    title: 'Shadow Mapper',
     img: IMG3,
-    githubLink: 'https://github.com',
     subtitle: 'Hello!',
-    alt: 'Description',
-    btn_name: 'Github',
+    alt: 'Link',
   },
   {
-    title: 'Tower Power',
-    img: TOWER_POWER_IMG,
-    githubLink: 'https://github.com/GuessHuIAm/tower-power',
-    subtitle: 'Created with Megan Yeo and Nithya Gottipati. A classic tower defense game!',
-    alt: 'Description',
-    btn_name: 'Github',
-  },
-  {
-    title: 'Under Construction',
+    title: 'Shadow Mapper',
     img: IMG3,
-    githubLink: 'https://github.com',
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
     subtitle: 'Hello!',
     alt: 'Description',
     btn_name: 'Github',
   },
 ]
 
+const crimsonItems = [
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+  {
+    title: 'Shadow Mapper',
+    img: IMG3,
+    subtitle: 'Hello!',
+    alt: 'Link',
+  },
+]
+
 function Portfolio() {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
+      <h5>My Recent Artworks</h5>
       <h2>Portfolio</h2>
-      <div className="container portfolio__container">
-        {portfolioItems.map(item => <PortfolioItem {...item} />)}
-      </div>
+      <Swiper
+        modules={[Pagination, Autoplay, EffectCards]}
+        slidesPerView={1}
+        effect={'cards'}
+        autoplay={{delay: 5000}}
+        pagination={{ clickable: true }}>
+        <article>
+          {portfolioItems.map(item => {
+            return (
+              <SwiperSlide className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={item.img} alt={item.alt} />
+                </div>
+                <h2>
+                  {item.title}
+                </h2>
+                <small className='text-light'>
+                  {item.subtitle}
+                </small>
+              </SwiperSlide>
+            )
+          })}
+        </article>
+      </Swiper>
+      <br/>
+      <Swiper
+        modules={[Pagination, Autoplay, EffectCards]}
+        slidesPerView={1}
+        effect={'cards'}
+        autoplay={{delay: 5000}}
+        pagination={{ clickable: true }}>
+        <article>
+          {crimsonItems.map(item => {
+            return (
+              <SwiperSlide className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={item.img} alt={item.alt} />
+                </div>
+                <h2>
+                  {item.title}
+                </h2>
+                <small className='text-light'>
+                  {item.subtitle}
+                </small>
+              </SwiperSlide>
+            )
+          })}
+        </article>
+      </Swiper>
     </section>
   )
 }

@@ -1,6 +1,6 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 35vh;
 }
 
 .header__container {
@@ -33,19 +33,6 @@ header {
     width: 1px;
     height: 2rem;
     background: var(--color-primary);
-}
-
-/* ================ ME ================ */
-.me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* ================ SCROLL DOWN ================ */
