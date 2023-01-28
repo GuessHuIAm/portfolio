@@ -29,6 +29,10 @@
     overflow: hidden;
 }
 
+.project__item h2 {
+    text-align: center;
+}
+
 .project__item h3 {
     margin: 1.2rem 0 2 rem;
 }

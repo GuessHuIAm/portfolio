@@ -71,35 +71,35 @@ function Skillset() {
     <h2>My Toolbox</h2>
 
     <div className="container experience__container">
+      <div>
+        <div className="experience__div">
+          <h3>Languages</h3>
+          <div className="experience__content">
+            {languages.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          </div>
+        </div>
 
-      <div className="experience__languages">
-        <h3>Languages</h3>
-        <div className="experience__content">
-          {languages.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+        <div className="experience__div">
+          <h3>Operating Systems</h3>
+          <div className="experience__content">
+            {operatingSystems.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          </div>
         </div>
       </div>
-
-      <div className="experience__tools">
-        <h3>Tools</h3>
-        <div className="experience__content">
-          {tools.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+      <div>
+        <div className="experience__div">
+          <h3>Frameworks</h3>
+          <div className="experience__content">
+            {frameworks.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          </div>
+        </div>
+        <div className="experience__div">
+          <h3>Tools</h3>
+          <div className="experience__content">
+            {tools.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
+          </div>
         </div>
       </div>
-
-      <div className="experience__frameworks">
-        <h3>Frameworks</h3>
-        <div className="experience__content">
-          {frameworks.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
-      <div className="experience__frontend">
-        <h3>Operating Systems</h3>
-        <div className="experience__content">
-          {operatingSystems.map(({title, subtitle, icon}) => <SkillDetail title={title} subtitle={subtitle} icon={icon}/>)}
-        </div>
-      </div>
-
     </div>
 
   </section>

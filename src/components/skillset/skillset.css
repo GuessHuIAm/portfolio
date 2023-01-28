@@ -10,31 +10,32 @@
     gap: 2rem;
 }
 
-.experience__container > div {
+.experience__div {
     background: var(--color-bg-variant);
     padding: 2rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    margin-top: 2rem;
 }
 
-.experience__container > div:hover {
+.experience__div:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
 
-.experience__container > div h3 {
+.experience__div h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
 }
 
-.experience__container > div h4 {
+.experience__div h4 {
     font-size: 0.9rem;
 }
 
-.experience__container > div small {
+.experience__div small {
     font-size: 0.7rem;
 }
 
@@ -58,12 +59,14 @@
 @media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
+        gap: 0rem;
     }
 
-    .experience__container > div {
+    .experience__div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
+        margin-top: 2rem;
     }
 
     .experience__content {
@@ -75,10 +78,9 @@
 @media screen and (max-width: 600px) {
     .experience__container {
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
-    .experience__container > div {
+    .experience__div {
         width: 100%;
         padding: 2rem 1rem;
     }

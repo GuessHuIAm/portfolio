@@ -1,6 +1,7 @@
 import React from 'react'
 import POOL_IMG from '../../assets/projects/pool.gif'
 import TOWER_POWER_IMG from '../../assets/projects/tower_power.png'
+import RAY_TRACER from '../../assets/projects/ray_tracer.png'
 import TEMP from '../../assets/logo.png'
 
 import './projects.css'
@@ -34,18 +35,10 @@ const projects = [
     btn_name: 'Github',
   },
   {
-    title: 'Shadow Mapper',
-    img: TEMP,
-    githubLink: 'https://github.com',
-    subtitle: 'Under Construction',
-    alt: 'Description',
-    btn_name: 'Github',
-  },
-  {
     title: 'Ray Tracer',
-    img: TEMP,
-    githubLink: 'https://github.com',
-    subtitle: 'Under Construction',
+    img: RAY_TRACER,
+    githubLink: 'https://github.com/GuessHuIAm/ray_tracer',
+    subtitle: 'A ray tracer with antialiasing and three different camera projections.',
     alt: 'Description',
     btn_name: 'Github',
   },
@@ -56,15 +49,7 @@ const projects = [
     subtitle: 'Created with Megan Yeo and Nithya Gottipati. A classic tower defense game!',
     alt: 'Description',
     btn_name: 'Github',
-  },
-  {
-    title: 'Bleetcode',
-    img: TEMP,
-    githubLink: 'https://github.com',
-    subtitle: 'Under Construction',
-    alt: 'Description',
-    btn_name: 'Github',
-  },
+  }
 ]
 
 function Projects() {
