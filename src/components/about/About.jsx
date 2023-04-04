@@ -42,10 +42,12 @@ const About = () => {
           <p>
           Welcome to my portfolio! My name is Michael and I'm currently a student at Harvard University
           studying Computer Science, Economics, and Visual Arts. I'm passionate about using technology to
-          connect people and bring them together. I believe that my unique combination of technical skills
+          connect people and bring them together, and always looking for interesting projects to contribute to!
+          I believe that my unique combination of technical skills
           and creative thinking allows me to approach problems from different angles and come up with
-          innovative solutions. When I'm not coding, you can find me exploring the world of visual arts, where I
-          love to let my creativity flow. I'm excited to share my projects and skills with you, and I
+          innovative solutions. When I'm not coding, you'll find me looking for my next inspiration to sketch,
+          running around the city, or cooking up a new recipe.
+          I'm excited to share my projects and skills with you, and I
           look forward to connecting with you!
           </p>
 
