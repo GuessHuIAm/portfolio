@@ -8,7 +8,7 @@ function NavBar() {
   const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
-      <a href="/#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#about" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}><AiOutlineUser /></a>
       <a href="#experience" onClick={() => setActiveNav('experience')} className={activeNav === 'experience' ? 'active' : ''}><AiOutlineLaptop /></a>
       <a href="#skillset" onClick={() => setActiveNav('skillset')} className={activeNav === 'skillset' ? 'active' : ''}><AiOutlineTool /></a>

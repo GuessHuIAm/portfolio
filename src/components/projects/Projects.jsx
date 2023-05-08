@@ -45,7 +45,7 @@ const projects = [
   {
     title: 'Tower Power',
     img: TOWER_POWER_IMG,
-    githubLink: 'https://github.com/GuessHuIAm/tower-power',
+    githubLink: 'https://github.com/GuessHuIAm/tower_power',
     subtitle: 'Created with Megan Yeo and Nithya Gottipati. A classic tower defense game!',
     alt: 'Description',
     btn_name: 'Github',
