@@ -48,7 +48,11 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 
@@ -60,12 +64,13 @@ section {
     margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
@@ -105,10 +110,41 @@ a:hover {
     color: var(--color-bg)
 }
 
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
 img {
     display: block;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+}
+
+@keyframes slideOut {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
@@ -116,6 +152,7 @@ img {
     .container {
         width: var(--container-width-md);
     }
+
     .section {
         margin-top: 6rem;
     }
@@ -126,9 +163,8 @@ img {
     .container {
         width: var(--container-width-sm);
     }
-    .section > h2 {
+
+    .section>h2 {
         margin-bottom: 2rem;
     }
 }
-
-

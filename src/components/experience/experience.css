@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem 3rem;
-    align-items: flex-start;
 }
 
 .experience__item {

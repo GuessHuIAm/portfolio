@@ -4,7 +4,7 @@ import {SiHtml5, SiCss3, SiJavascript, SiPython,
   SiReact, SiGit, SiDocker, SiKubernetes, SiUnity,
   SiPostman, SiAmazonaws, SiBootstrap, SiDjango,
   SiFlask, SiCelery, SiMacos, SiUbuntu, SiWindows,
-  SiLinux, SiOpengl, SiJava, SiJenkins, SiR} from 'react-icons/si'
+  SiLinux, SiOpengl, SiJava, SiJenkins, SiR, SiPhp} from 'react-icons/si'
 import {GrMysql} from 'react-icons/gr'
 
 import './skillset.css'
@@ -25,12 +25,13 @@ const SkillDetail = ({title, subtitle, icon}) => {
 
 const languages = [
   { title: 'Python', subtitle: 'Experienced', icon: <SiPython />},
+  { title: 'C', subtitle: 'Experienced', icon: <SiC />},
+  { title: 'C#', subtitle: 'Experienced', icon: <SiCsharp />},
+  { title: 'PHP', subtitle: 'Experienced', icon: <SiPhp />},
   { title: 'HTML', subtitle: 'Experienced', icon: <SiHtml5 />},
   { title: 'JavaScript', subtitle: 'Experienced', icon: <SiJavascript />},
   { title: 'CSS', subtitle: 'Experienced', icon: <SiCss3 />},
-  { title: 'C', subtitle: 'Experienced', icon: <SiC />},
   { title: 'C++', subtitle: 'Intermediate', icon: <SiCplusplus />},
-  { title: 'C#', subtitle: 'Intermediate', icon: <SiCsharp />},
   { title: 'Java', subtitle: 'Intermediate', icon: <SiJava />},
   { title: 'R', subtitle: 'Intermediate', icon: <SiR />},
   { title: 'MySQL', subtitle: 'Intermediate', icon: <GrMysql />},
