@@ -32,7 +32,7 @@ const projects = [
     title: 'Shleeping',
     img: SHLEEPING,
     subtitle: 'A 2D top-down action adventure game about a sheep who can\'t sleep.',
-    btn_name: 'Demo coming Soon!',
+    btn_name: 'Demo Coming Soon!',
   },
   {
     title: 'BardQuest',
