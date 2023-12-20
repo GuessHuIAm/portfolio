@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0986bb57.css",
-    "main.js": "/portfolio/static/js/main.ea18b315.js",
+    "main.js": "/portfolio/static/js/main.9e7928fb.js",
     "static/media/Great_Books.mov": "/portfolio/static/media/Great_Books.8aa535c35a4fa68e1206.mov",
-    "static/media/headshot.jpg": "/portfolio/static/media/headshot.22a32fb4342bafeb3fbb.jpg",
     "static/media/pool.gif": "/portfolio/static/media/pool.f16e7eac1cd531a3b66d.gif",
     "static/media/Kirby.mp4": "/portfolio/static/media/Kirby.a0539fb2aa53a2390911.mp4",
     "static/media/shleeping.gif": "/portfolio/static/media/shleeping.057535401d04f3bf7813.gif",
@@ -18,15 +17,16 @@
     "static/media/tower_power.png": "/portfolio/static/media/tower_power.e2773b6401ddc6d4db4a.png",
     "static/media/Lamonster.png": "/portfolio/static/media/Lamonster.a0a6489b2a2057e4ab60.png",
     "static/media/Situationship.png": "/portfolio/static/media/Situationship.96d6be1a7e5064e559d8.png",
+    "static/media/headshot.jpg": "/portfolio/static/media/headshot.1587ed2b8653bb8255ef.jpg",
     "static/media/resume.pdf": "/portfolio/static/media/resume.0bd995363537f1c75812.pdf",
     "static/media/miniatureddit.png": "/portfolio/static/media/miniatureddit.226c83918a7a51a9e37b.png",
     "static/media/favicon.ico": "/portfolio/static/media/favicon.fc9d1e40b5d8c5fc5c76.ico",
     "index.html": "/portfolio/index.html",
     "main.0986bb57.css.map": "/portfolio/static/css/main.0986bb57.css.map",
-    "main.ea18b315.js.map": "/portfolio/static/js/main.ea18b315.js.map"
+    "main.9e7928fb.js.map": "/portfolio/static/js/main.9e7928fb.js.map"
   },
   "entrypoints": [
     "static/css/main.0986bb57.css",
-    "static/js/main.ea18b315.js"
+    "static/js/main.9e7928fb.js"
   ]
 }
