@@ -29,11 +29,12 @@ const cards = [
 ];
 
 const paragraphs = [
-  "Welcome to my portfolio! I'm Michael, a student at Harvard University pursuing a concurrent Bachelor's and Master's in Computer Science, with a secondary focus in Economics. I'm passionate about cutting-edge machine learning applications, computer graphics, and problem-solving with programming.",
-  "Using technology to connect people and foster inclusivity is at the core of my mission. As a first-generation low-income student, I am dedicated to making a difference, particularly in underserved communities.",
-  "I believe that by leveraging my technical skills and creative thinking, I can approach problems from unique angles and develop innovative solutions; by practicing empathy and compassion, I can build meaningful relationships and make a positive impact on the world, starting by empowering those around me.",
-  "When I'm not coding, I find inspiration through sketching, exploring the nearby city streets, and experimenting with new recipes. These diverse experiences fuel my creativity and inform my work.",
-  "I'm excited to share my projects and skills with you through this portfolio. Let's connect and create something amazing together!"
+  `Welcome to my portfolio! I'm Michael, a student at Harvard University pursuing a concurrent Bachelor's and Master's degree in Computer Science, with a secondary focus in Economics.
+  My enthusiasm extends across various domains within tech, where I actively engage and innovate in areas such as full-stack development, creating scalable systems, game design and development, machine learning, extended reality experiences, and animation.`,
+  `Using technology to connect people and foster inclusivity is at the core of my mission. As a first-generation and low-income student, I am dedicated to make a difference, particularly in underserved communities. I believe that by leveraging my technical skills whilst practicing empathy and compassion,
+  I can approach problems from unique angles and develop innovative solutions that can positively impact the world, starting by empowering those around me.`,
+  `When I'm not coding, I find inspiration through sketching, exploring the nearby city streets, and experimenting with new cheesecake recipes. These diverse experiences fuel my creativity and inform my work.
+  I'm excited to share my projects and skills with you through this portfolio. Let's connect and create something amazing together!`
 ];
 
 const About = () => {
